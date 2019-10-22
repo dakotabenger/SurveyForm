@@ -1,0 +1,120 @@
+<script type= "text/javascript" src= "main.js"></script>
+<h1 id="title">Movie Survey</h1>
+<link href="main.css" rel="stylesheet">
+<div id="form-outer">
+  <p id="description">
+    Help us collect inormation on your favorite movies
+  </p>
+  <form id="survey-form" method="POST">
+    <div class="rowTab">
+      <div class="labels">
+        <label id="name-label" for="name">* Name: </label>
+      </div>
+      <div class="rightTab">
+        <input autofocus type="text" name="name" id="name" class="input-field" placeholder="Enter your name" required>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label id="email-label" for="email">* Email: </label>
+      </div>
+      <div class="rightTab">
+        <input type="email" name="email" id="email" class="input-field" required placeholder="Enter your Email">
+      </div>
+    </div>
+     <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="age">* Age: </label>
+      </div>
+      <div class="rightTab">
+        <input type="number" name="age" id="number" min="1" max="125" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    
+    <div class="rowTab">
+      <div class="labels">
+        <label id="number-label" for="dob">* Date of Birth: </label>
+      </div>
+      <div class="rightTab">
+        <input type="date" name="dob" id="date" class="input-field" placeholder="Age">
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="frequency">How often do you watch movies?</label>
+      </div>
+      <div class="rightTab">
+        <select id="dropdown" name="currentPos" class="dropdown">
+      <option disabled value>Select an option</option>
+      <option  value="monthly">Once a month</option>
+      <option value="weekly">Once a week</option>
+      <option value="multipleWeekly">3-5 times a week</option>
+      <option value="daily">Once a day or more</option>
+      <option value="other">Other</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="favGenre">*What's your favorite genre?</label>
+      </div>
+      <div class="rightTab">
+        <ul style="list-style: none;">
+          <li class="radio"><label>Action<input name="radio-buttons" value="1"  type="radio" class="favGenre" ></label></li>
+          <li class="radio"><label>Comedy<input name="radio-buttons" value="2"  type="radio" class="favGenre" ></label></li>
+          <li class="radio"><label>Drama<input name="radio-buttons" value="3"  type="radio" class="favGenre" ></label></li>
+          <li class="radio"><label>Horror<input name="radio-buttons" value="4"  type="radio" class="favGenre" ></label></li>
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="most-like">Out of these actors, who is your favorite?</label>
+      </div>
+      <div class="rightTab">
+        <select id="most-like" name="mostLike" class="dropdown">
+      <option disabled selected value>Select an option</option>
+      <option value="Tom">Tom Cruise</option>
+      <option value="Leo">Leonardo Dicaprio</option>
+      <option value="Liam">Liam Nieson</option>
+      <option value="Robert">Robert Downey Jr.</option>
+    </select>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="preferences">Which movies are you looking forward to in the next year?<br>(Check all that apply): </label>
+      </div>
+      <div class="rightTab">
+        <ul id="preferences" style="list-style: none;">
+          <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRatings">Star Wars The Rise of Skywalker</label></li>
+          <li class="checkbox"><input name="prefer" value="2" type="checkbox" class="userRatings">Bad Boys for Life</li>
+          <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRatings">No Time To Die (007)</label></li>
+          <li class="checkbox"><label><input name="prefer" value="4" type="checkbox" class="userRatings">The King's Man</label></li>
+          <li class="checkbox"><label><input name="prefer" value="5" type="checkbox" class="userRatings">Gretel and Hansel</label></li>
+          <li class="checkbox"><label><input name="prefer" value="6" type="checkbox" class="userRatings">Now You See Me 3</label></li>
+          <li class="checkbox"><label><input name="prefer" value="7" type="checkbox" class="userRatings">Black Widow</label></li>
+          <li class="checkbox"><label><input name="prefer" value="8" type="checkbox" class="userRatings">West Side Story</label></li>
+          <li class="checkbox"><label><input name="prefer" value="9" type="checkbox" class="userRatings">Top Gun 2: Maverick</label></li>
+          <li class="checkbox"><label><input name="prefer" value="10" type="checkbox" class="userRatings">Godzilla vs. Kong</label></li>
+          <li class="checkbox"><label><input name="prefer" value="11" type="checkbox" class="userRatings">Mulan</label></li>
+          <li class="checkbox"><label><input name="prefer" value="12" type="checkbox" class="userRatings">Wonder Woman 1984</label></li>
+          <li class="checkbox"><label><input name="prefer" value="13" type="checkbox" class="userRatings">Trolls World Tour</label></li>
+          <li class="checkbox"><label><input name="prefer" value="14" type="checkbox" class="userRatings">Sonic</label></li>
+          
+        </ul>
+      </div>
+    </div>
+    <div class="rowTab">
+      <div class="labels">
+        <label for="comments"> Your Top 5 Movies Ever</label>
+      </div>
+      <div class="rightTab">
+        <textarea id="comments" class="input-field" style="height:50px;resize:vertical;" name="comment" placeholder="Enter your movies here..."></textarea>
+      </div>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+  </div>
